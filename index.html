@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusNotes - Student Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampusNotes</h1>
+        <p>Your personal study space</p>
+    </header>
+
+    <main class="container">
+
+        <section class="note-form">
+            <h2>Add New Note</h2>
+
+            <input type="text" id="title"
+                placeholder="Enter note title">
+
+            <textarea id="content"
+                placeholder="Write your notes here..."></textarea>
+
+            <button onclick="addNote()">Add Note</button>
+        </section>
+
+        <section class="notes-section">
+            <h2>My Notes</h2>
+            <div id="notesList"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
